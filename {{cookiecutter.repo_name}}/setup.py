@@ -1,21 +1,12 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
-import os
-import sys
-
-
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
-
-if sys.argv[-1] == 'publish':
-    os.system('python setup.py sdist upload')
-    sys.exit()
+from setuptools import setup, find_packages
 
 readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
+
+requires = [
+    ]
 
 setup(
     name='{{ cookiecutter.repo_name }}',
@@ -25,13 +16,9 @@ setup(
     author='{{ cookiecutter.full_name }}',
     author_email='{{ cookiecutter.email }}',
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
-    packages=[
-        '{{ cookiecutter.repo_name }}',
-    ],
-    package_dir={'{{ cookiecutter.repo_name }}': '{{ cookiecutter.repo_name }}'},
+    packages=find_packages(),
     include_package_data=True,
-    install_requires=[
-    ],
+    install_requires=requires,
     license="BSD",
     zip_safe=False,
     keywords='{{ cookiecutter.repo_name }}',
@@ -46,5 +33,4 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
     ],
-    test_suite='tests',
 )
