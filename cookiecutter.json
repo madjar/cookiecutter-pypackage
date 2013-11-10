@@ -2,6 +2,7 @@
 	"full_name": "Georges Dubus",
 	"email": "georges.dubus@gmail.com",
 	"github_username": "madjar",
+        "twitter_username": "georgesdubus",
 	"project_name": "Python Boilerplate",
 	"repo_name": "boilerplate",
 	"project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",

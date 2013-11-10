@@ -14,10 +14,28 @@
 
 {{ cookiecutter.project_short_description}}
 
-* Free software: BSD license
-* Documentation: http://{{ cookiecutter.repo_name }}.rtfd.org.
-
 Features
 --------
 
-* TODO
+Install
+-------
+
+Usage
+-----
+
+Contribute
+----------
+
+The source code is available on `github`_.
+
+Bug reports and pull requests welcomed !
+
+.. _`github`: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
+
+Author
+------
+
+This project is made by {{ cookiecutter.full_name }} <{{ cookiecutter.email }}>.
+You can find me on twitter: `@{{ cookiecutter.twitter_username }}`_.
+
+.. _`@{{ cookiecutter.twitter_username }}`: https://twitter.com/{{ cookiecutter.twitter_username }}
